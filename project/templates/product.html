@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html'%}
+{% block title %}
+Product
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+{{ product.name }}
+{{ product.category.name }}
+                {{ product.type.name }}
+                {{ product.compound.name }}
+                {{ product.length }}
+               {{ product.width }}
+               {{ product.price }}
+               {{ product.quantity }}
+
+{% endblock content %}

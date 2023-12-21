@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale-1.0">
+    {% load static %}
+        <!-- Core theme CSS (includes Bootstrap)-->
+		<link href="{% static 'css/reset.css' %}" rel="stylesheet" />
+		<link href="{% static 'css/site.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+<header>
+	<div class="wrapper-h" style="margin-left: 70px;">
+	<div class="div_uup">
+		<div class="icon"><img src="{% static 'source/на верстку/logo.png'%}" style="width: 30 px;height: 24px; "></div>
+	<div class="up_head"><a href="">Каталог</a></div>
+	<div class="up_head"><a href="">Контакты</a></div>
+	<div class="up_head"><a href="">Доставка</a></div>
+	<div class="call-head"><a href="">Заказать звонок</a></div>
+	<div>
+		<form action="{%url 'search'%}" method="get">
+		<input type="search" type="text"name="q"placeholder="Введите запрос">
+			<button type = "submit">Найти</button>
+		</form>
+	</div>
+	<div class="phone-num">
+		<div>+7 (929) 255 20 08</div>
+		<div>+7 (950) 012 64 11</div>
+	</div>
+	<span><a href=""></a></span>
+	<span><a href=""></a></span>
+	<span><a href=""></a></span>
+
+	</div>
+	</div>
+	<div style="height:1px;background-color:gray;margin-top:15px;"></div>
+	<div class="div_down_head">
+		<span class="down-head"><a href="{% url 'products_sofa_list'%}">Диваны и кресла</a></span>
+		<span class="down-head"><a href="{% url 'products_fireplaces_list'%}">Камины</a></span>
+		<span class="down-head"><a href="{% url 'products_furniture_list'%}">Мебель для дома</a></span>
+		<span class="down-head"><a href="{% url 'products_tables_list'%}">Столы и стулья</a></span>
+		<span class="down-head"><a href="">Скидки до 70%</a></span>
+	</div>
+
+</header>
+
+{%block content%}
+<main>
+
+</main>
+{%endblock content%}
+<footer>
+	<div class="giv">
+	<div class="f1">
+		<h3 class="rot3">Свяжитесь с нами</h3>
+		<h4 class="m4">+7 (929) 255 20 08</h4>
+		<h4 class="m4">+7 (950) 012 64 11</h4>
+		<h4 class="m4">@bohichmebel@yandex.ru</h4><br>
+		<h4 class="m4"><a href="" class="flink">Контакты</a></h4>
+		<h4 class="m4"><a href="" class="flink">Перезвоните мне</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div class="f1">
+		<h3 class="rot3">Режим работы колл-центра</h3>
+		<h4 class="m4">с 11:00 до 22:00</h4><br>
+		<h3 class="rot3">Доставка заказов</h3>
+		<h4 class="m4">с 11:00 до 22:00</h4>
+
+
+
+	</div>
+
+	<div   class="f1">
+		<h3 class="rot3">Информация для покупателей</h3>
+<h4 class="m4"><a class="flink">Адреса шоурумов</a></h4>
+		<h4 class="m4"><a class="flink">Доставка и оплата</a></h4>
+		<h4 class="m4"><a class="flink">Обмен и возврат</a></h4>
+		<h4 class="m4"><a class="flink">Оферта</a></h4>
+		<h4 class="m4"><a class="flink">Политика конфиденциальности</a></h4>
+
+
+
+	</div>
+	<div class="f1">
+<h3 class="rot3">Каталог</h3>
+<h3  class="flink"><a href="{% url 'products_sofa_list'%}">Диваны и кресла</a></h3>
+		<h4  class="flink"><a href="{% url 'products_fireplaces_list'%}">Камины</a></h4>
+		<h4  class="flink"><a href="{% url 'products_furniture_list'%}">Мебель для дома</a></h4>
+		<h4  class="flink"><a href="{% url 'products_tables_list'%}">Столы и стулья</a></h4>
+		<h3 class="rot3">Гарантия</h3>
+		<h4 class="m4">На мебель - 18 месяцев</h4>
+		<h4 class="m4">На камины Royal Flame - 12 месяцев</h4>
+		<h4 class="m4">На камины Dimplex - 24 месяца </h4>
+
+
+
+
+
+	</div>
+</div>
+</footer>
+</body>
+
+</html>

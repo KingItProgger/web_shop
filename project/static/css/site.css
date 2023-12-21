@@ -1,0 +1,128 @@
+
+.div_uup {
+
+margin-top: 25px;
+
+
+
+
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(150px,50px));
+
+}
+
+.up_head {
+color: gray;
+font-size: 16px;
+margin-right: 40px;
+
+}
+.div_down_head {
+margin-left: 70px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.phone-num
+{
+font-size:12px;
+}
+.down-head {
+color: black;
+font-size: 15px;
+margin-right: 75px;
+}
+
+.product_list
+{
+
+font-size: 16px;
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+margin-left: 30px;
+padding-bottom: 35px;
+}
+.product-box
+{
+background-color: #D3D3D3;
+
+font_size: 24px;
+}
+footer {
+background-color: #D3D3D3;
+}
+.sal
+{
+color: red;
+font-size:16px;
+margin-left:20px;
+margin-top:20px;
+margin-bottom:20px;
+
+}
+
+.pn
+{
+
+font-size:16px;
+margin-left:20px;
+margin-top:20px;
+
+
+}
+.roduct_img_list
+{
+margin-left:20px;
+margin-top:20px;
+margin-right:20px;
+}
+.giv
+{
+font-size: 12px;
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+margin-left: 30px;
+padding-bottom: 35px;
+}
+.rot3{
+font-size: 14px;
+font-weight: 600;
+margin-top:15px;
+
+
+}
+.m4 {
+margin-top:8px;
+}
+
+.flink {
+text-decoration: underline;
+margin-top:8px;
+}
+
+.call-head {
+color: gray;
+font-size: 16px;
+margin-right: 40px;
+text-decoration: underline;
+}
+
+h1 {
+text-align: center;
+font-size: 20px;
+font-weight: 550;
+}
+
+.sofa_types {
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+margin: 50 px;
+
+}
+
+.type-sofa {
+background-color: gray;
+
+font-size: 16px;
+margin-right: 30px;
+}

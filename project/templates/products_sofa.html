@@ -1,0 +1,46 @@
+{% extends 'flatpages/default.html'%}
+ {% load static %}
+
+{% block title %}
+Диваны
+{% endblock title %}
+
+{%block content%}
+ <main>
+
+	<h1>Диваны</h1>
+
+	<section class="sofa_types" style="margin-left:70px;">
+
+		<div class="type-sofa"><img src="{% static 'source/на верстку/sofa (1).png'%}"><a class="link-sofa"  href="{%url 'sofa_straight'%}">Прямые Диваны</a></div>
+
+		<div class="type-sofa"><img src="{% static 'source/на верстку/sofa (3).png'%}"><a class="link-sofa"  href="{%url 'sofa_corner'%}">Угловые диваны</a></div>
+		<div class="type-sofa"><img src="{% static 'source/на верстку/трансформер.png'%}"><a class="link-sofa"  href="{%url 'sofa_trans'%}">Диваны-трансформеры</a></div>
+
+	</section>
+	<br>
+	<section class="filter">
+		<span>все фильтры</span>
+		<span>цена</span>
+		<span>габариты</span>
+		<span>механизм трансформации</span>
+	</section>
+	<section class="content_list">
+		{% if products %}
+		<div class="product_list">
+		{% for product in products %}
+		<div class="product-box">
+			<div class="roduct_img_list"><img  src="{{ product.img.url }}" width="240px"></div>
+			<div class="pn">{{product.name}}</div>
+			<div class="sal">{{product.price}}</div>
+
+		</div>
+		{%endfor%}
+		</div>
+		{%else %}
+		{%endif%}
+	</section>
+</main>
+{%endblock content%}
+
+
